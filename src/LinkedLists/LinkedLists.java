@@ -19,7 +19,7 @@ public class LinkedLists {
    * 
    * @param args the arguments for the main method.
    */
-  public static void main(String args[]) {
+  public static void main(String[] args) {
 
     LinkedList<String> list = new LinkedList<String>();
 
@@ -29,22 +29,22 @@ public class LinkedLists {
     list.add("Romario");
     list.add("Obama");
 
-		//Adding element to first position
-		list.addFirst("Antoine");
-		
-		//Adding element to last position
-		list.addLast("Ayesha");
-		
-		//Adding element to the fourth position (starts from 0)
-		list.add(3, "Beyonce");
-		
-		//Iterate through linked list
-		Iterator<String> iterator = list.iterator();
-		while (iterator.hasNext()) {
-			System.out.println(iterator.next());
-		}
-		
-		//Remove third element (index starts at 0)
-		list.remove(2);
-	}
+    //Adding element to first position
+    list.addFirst("Antoine");
+
+    //Adding element to last position
+    list.addLast("Ayesha");
+
+    //Adding element to the fourth position (starts from 0)
+    list.add(3, "Beyonce");
+    
+    //Iterate through linked list
+    Iterator<String> iterator = list.iterator();
+    while (iterator.hasNext()) {
+      System.out.println(iterator.next());
+    }
+
+    //Remove third element (index starts at 0)
+    list.remove(2);
+  }
 }
