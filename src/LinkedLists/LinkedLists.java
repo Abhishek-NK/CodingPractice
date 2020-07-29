@@ -2,7 +2,7 @@ package LinkedLists;
 
 import java.util.*;
 
-/** 
+/**
  * @author Abhishek
  * 
  * Linked lists:
@@ -10,7 +10,9 @@ import java.util.*;
  * No need for contiguous memory locations.
  * Adding and deleting elements are not expensive.
  * Acts like a queue, FIFO.
- *
+ * Access: O(n)
+ * Manipulation: O(1)
+ * 
  */
 public class LinkedLists {
 	
