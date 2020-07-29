@@ -1,5 +1,7 @@
 package ArraysAndStrings;
 
+import java.util.HashMap;
+
 public class ArraysAndStrings {
 
   public static void main(String[] args) {
@@ -26,8 +28,25 @@ public class ArraysAndStrings {
     
     //Multidimensional array
     int[][] multi = { {1, 2, 3, 4}, {5, 6, 7, 8} };
-    System.out.println("\nMulti: " + multi[0][3]);
+    System.out.println("\nMulti: " + multi[0][3]); 
+  
+    //create hashmap
+    HashMap<String, String> capitalCities = new HashMap<String, String>();
     
+    //Add keys and values(Country, City)
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Japan", "Tokyo");
+    capitalCities.put("India", "Delhi");
+    capitalCities.put("India", "Goa");
+    System.out.println(capitalCities);
+    System.out.println(capitalCities.get("India"));
+    
+    //loop through hashmap
+    for (String i : capitalCities.keySet()) {
+      System.out.println("City: " + i);
+    }
   }
+  
 
 }
