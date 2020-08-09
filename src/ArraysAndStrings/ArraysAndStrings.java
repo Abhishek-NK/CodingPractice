@@ -1,5 +1,6 @@
 package ArraysAndStrings;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class ArraysAndStrings {
@@ -42,10 +43,27 @@ public class ArraysAndStrings {
     System.out.println(capitalCities);
     System.out.println(capitalCities.get("India"));
     
-    //loop through hashmap
+    //loop through HashMap
     for (String i : capitalCities.keySet()) {
       System.out.println("City: " + i);
     }
+    
+    //ArrayList
+    ArrayList<String> animals = new ArrayList<String>();
+    animals.add("Dog");
+    animals.add("Cat");
+    animals.add("Duck");
+    animals.add("Elephant");
+    animals.add("Lion");
+    System.out.println(animals);
+    
+    //Without StringBuffer the time is O(n^2) because String in java is internally an array
+    StringBuffer sentence = new StringBuffer();
+    for (String w : cars) {
+      sentence.append(w);
+    }
+    System.out.println("String buffer: " + sentence.toString());
+    
   }
   
 
